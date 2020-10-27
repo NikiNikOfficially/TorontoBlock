@@ -1,0 +1,57 @@
+{
+    "manifest_version": 2,
+    "name": "TorontoBlock",
+    "description": "extension blocks Ad's on Tor Pages",
+    "version": "1.0",
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "16": "images/icon_x16.png",
+            "32": "images/icon_x32.png"
+        },
+        "default_title": "TorontoBlock",
+        "default_popup": "src/popup/popup.html"
+    },
+    "options_ui": {
+        "page": "src/options/options.html"
+    },
+    "icons": {
+        "16": "images/icon_x16.png",
+        "32": "images/icon_x32.png"
+    },
+    "permissions": [
+        "tabs",
+        "menus",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation",
+        "<all_urls>",
+        "https://discordapp.com/*",
+        "http://nikinik.bplaced.net/*"
+    ],
+    "content_security_policy": "script-src 'self' https://*.nekos.life/*; object-src 'self';",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "/scripts/overLayUI.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "src/config.js",
+            "src/background/adBlocker.js",
+            "src/background/contextMenu.js",
+            "lists/onionList.js",
+            "src/background/events.js"
+        ]
+    },
+    "web_accessible_resources": [
+        "rep_imgs/*",
+        "https://cdn.nekos.life/hentai/*"
+    ]
+}

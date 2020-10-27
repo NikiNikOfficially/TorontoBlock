@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="options.min.css">
+
+    <script src="../config.js"></script>
+    <script src="options.js" defer></script>
+
+</head>
+
+<body>
+    <form id="formSettings">
+        <table>
+            <tr>
+                <td class="col1">
+                    Images
+                </td>
+                <td class="col2">
+
+                </td>
+                <td class="col3">
+                    <label>rplace <input id="checkboxReplaceImages" type="checkbox" value="global"></label>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">
+                    Custom URLS
+                </td>
+                <td class="clo2">
+                    <label>select which category of images should used to replace ad images</label>
+                </td>
+                <td class="clo3">
+                    <label>type
+                        <select class="select-lang" id="selectNekosLifeCategory" required>
+                            <option value="hentai">Hentai (NSFW)</option>
+                            <option value="Random_hentai_gif">Random Hentai Gif (NSFW)[GIF]</option>
+                            <option value="classic">Classic (NSFW)[GIF]</option>
+
+                            <option value="anal">Anal (NSFW)[GIF]</option>
+
+                            <option value="blowjob">BlowJob (NSFW)</option>
+                            <option value="bj">BlowJob (NSFW)[GIF]</option>
+                            <option value="boobs">Boobs (NSFW)[GIF]</option>
+
+                            <option value="cum_jpg">Cum (NSFW)</option>
+                            <option value="cum">Cum (NSFW)[GIF]</option>
+
+                            <option value="ero">Ero (NSFW/SFW)</option>
+                            <option value="eroyuri">Ero Yuri (NSFW/SFW)</option>
+                            <option value="erok">Erok (NSFW)</option>
+                            <option value="erokemo">Erokemo (SFW)</option>
+                            <option value="eron">Eron (SFW)</option>
+
+                            <option value="erofeet">Feet (SFW)</option>
+                            <option value="feet">Feet (NSFW)</option>
+                            <option value="feetg">Feet (NSFW/SFW)[GIF]</option>
+                            <option value="fox_girl">Fox Girl (NSFW)</option>
+                            <option value="futanari">Futanari (NSFW)</option>
+
+                            <option value="gecg">gecg (NSFW/SFW)</option>
+
+                            <option value="hololewd">Hololewd (NSFW)</option>
+
+                            <option value="kemonomimi">Kemonomimi (SFW)</option>
+                            <option value="keta">Keta (NSFW/SFW)</option>
+                            <option value="lewdk">Kewdk (NSFW)</option>
+                            <option value="kuni">Kuni (NSFW)[GIF]</option>
+
+                            <option value="lewdkemo">Lewd Kemo (NSFW)</option>
+
+                            <option value="neko">Neko (SFW)</option>
+                            <option value="lewd">Neko (NSFW)</option>
+                            <option value="ngif">Neko Gif (SFW)[GIF]</option>
+                            <option value="nsfw_neko_gif">Neko (NSFW)[GIF]</option>
+
+                            <option value="pussy_jpg">Pussy (NSFW)</option>
+                            <option value="pussy">Pussy (NSFW)[GIF]</option>
+                            <option value="pwankg">Pwankg (NSFW)[GIF]</option>
+
+                            <option value="solo">Solo (NSFW)</option>
+                            <option value="solog">Solo (NSFW)[GIF]</option>
+
+                            <option value="tits">Tits (NSFW)</option>
+                            <option value="trap">Trap (NSFW)</option>
+
+                            <option value="yuri">Yuri (NSFW)</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col1">
+                    <label>Discord Webhook</label>
+                </td>
+                <td class="col2">
+                    <label>active <input id="checkboxUseDiscordWebhook" type="checkbox" value="global"></label>
+                </td>
+
+                <td class="col3">
+                    <label>webhook urk <input style="width: 100%; text-align: left;" type="text" id="inputDiscordWebhookUrl" placeholder="e.g ../778032668027101274/t3O29AGXAydpYFAFsxJtwB-g2AeZBvfF3dy4T2XDeb3ZwRsntolAJHJXLeU5NOO6wJXi"></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col1 no-border">
+                    <button type="submit" class="button" id="buttonSubmit">save</button>
+                </td>
+                <td class="col2 no-border"></td>
+                <td class="col3 no-border"></td>
+            </tr>
+        </table>
+    </form>
+    <div id="message"></div>
+</body>
+
+</html>
